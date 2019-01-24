@@ -1,0 +1,41 @@
+page-splash-screen {
+ 
+        .overlay{
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            z-index: 1000;
+            width:100%;
+            background-color: #ff6666;
+    
+        }
+        .inner{
+            background-color: #ff6666;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            img{
+                height:170px;
+                width:170px;
+                position: absolute;
+                margin-top: -50%;
+            }
+    
+            h1{
+                color: white;
+                font-family: URW Chancery L, cursive;
+                font-style: italic;
+                font-weight: bold;
+                font-size: 3em;
+                font-weight: 200;
+    
+            }
+    
+        }
+    
+    
