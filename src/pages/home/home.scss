@@ -1,3 +1,40 @@
 page-home {
+  
+      .card-background-page {
+        
+        .container {
+            position: relative;
+            text-align: center;
+            color: black;
+            font-family: URW Chancery L, cursive;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1em;
+            font-weight: 600;
+            margin:0;
+            padding:0;
+            background-size: cover;
+    
+          }
+          
+       
+          
+          /* Bottom left text */
+          .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+          }
+         
 
-}
+        ion-card {
+          position: relative;
+          text-align: center;
+        }
+      
+    
+      
+      }
+      
+      } 
+     

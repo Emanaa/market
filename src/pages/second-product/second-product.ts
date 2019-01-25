@@ -1,10 +1,8 @@
-import { SlidePage } from './../slide/slide';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-
 /**
- * Generated class for the SplashScreenPage page.
+ * Generated class for the SecondProductPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,19 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-splash-screen',
-  templateUrl: 'splash-screen.html',
+  selector: 'page-second-product',
+  templateUrl: 'second-product.html',
 })
-export class SplashScreenPage {
-  splash=true;
+export class SecondProductPage {
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-   
-      setTimeout(() => this.navCtrl.push(SlidePage),4000);
- 
-
+    console.log('ionViewDidLoad SecondProductPage');
   }
 
 }

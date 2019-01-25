@@ -20,8 +20,12 @@ export class SlidePage {
   }
 
   nextPage(){
-    this.navCtrl.push(HomePage)
+    this.navCtrl.push(HomePage);
   }
+  HomePage(){
+    this.navCtrl.push(HomePage);
+  }
+
   ionViewDidLoad() {
 
     

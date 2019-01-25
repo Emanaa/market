@@ -1,18 +1,53 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
+  <ion-navbar hideBackButton >
+      <ion-icon color="danger" style=" margin-left: 350px;" class="icon" name="search"></ion-icon>
+      <ion-icon color="danger" style="padding-left: 10px;" name="cart"></ion-icon>
+      
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+<ion-content padding class="card-background-page">
+   <ion-slides autoplay="2000" loop="true" speed="500">
+        <ion-slide *ngFor="let image of imageArray">
+          <img [src]="image.image"/>
+        </ion-slide>
+  </ion-slides>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
-</ion-content>
+  
+  <ion-grid>
+  
+        
+            <ion-row >
+                <ion-col  *ngFor="let item of items"   col-6 padding>
+              
+                    <ion-card  padding color="danger"  *ngIf="item.id==1 || item.id==2  " (click)="goToProduct1()" >
+                        <div class="container">
+                            <img [src]="item.category_img" />
+                            <div class="bottom-left">{{item.name}}</div>
+                          </div> 
+                         
+                         
+                    </ion-card>
+
+                    <ion-card  padding color="danger"  *ngIf="item.id==3 || item.id==4  " (click)="goToProduct2()" >
+                        <div class="container">
+                            <img [src]="item.category_img" />
+                            <div class="bottom-left">{{item.name}}</div>
+                          </div> 
+                         
+                         
+                    </ion-card>
+
+                </ion-col>
+              </ion-row>
+      
+         
+     
+   
+   
+    
+  
+  </ion-grid>
+  </ion-content>
