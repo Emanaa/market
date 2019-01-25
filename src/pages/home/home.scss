@@ -14,6 +14,7 @@ page-home {
             margin:0;
             padding:0;
             background-size: cover;
+            text-align: center;
     
           }
           
@@ -21,9 +22,10 @@ page-home {
           
           /* Bottom left text */
           .bottom-left {
+            
             position: absolute;
-            bottom: 8px;
-            left: 16px;
+            bottom: 2%;
+            left: 6%;
           }
          
 

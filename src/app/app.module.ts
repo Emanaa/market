@@ -1,3 +1,4 @@
+import { DetailsPage } from './../pages/details/details';
 import { FirstProductPage } from './../pages/first-product/first-product';
 import { SplashScreenPage } from './../pages/splash-screen/splash-screen';
 import { BrowserModule } from '@angular/platform-browser';
@@ -23,12 +24,15 @@ import { SecondProductPage } from '../pages/second-product/second-product';
     SlidePage,
     FirstProductPage,
     SecondProductPage,
+    DetailsPage,
 
   ],
   imports: [
     BrowserModule,
     HttpClientModule ,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      tabsPlacement : 'bottom'
+    }),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -38,7 +42,8 @@ import { SecondProductPage } from '../pages/second-product/second-product';
     SplashScreenPage,
     SlidePage,
     FirstProductPage,
-    SecondProductPage
+    SecondProductPage,
+    DetailsPage
  
   ],
   providers: [

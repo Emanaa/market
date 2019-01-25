@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar hideBackButton >
-      <ion-icon color="danger" style=" margin-left: 350px;" class="icon" name="search"></ion-icon>
+      <ion-icon color="danger" style=" margin-left: 80%;" class="icon" name="search"></ion-icon>
       <ion-icon color="danger" style="padding-left: 10px;" name="cart"></ion-icon>
       
   </ion-navbar>
@@ -9,9 +9,9 @@
 
 
 <ion-content padding class="card-background-page">
-   <ion-slides autoplay="2000" loop="true" speed="500">
-        <ion-slide *ngFor="let image of imageArray">
-          <img [src]="image.image"/>
+   <ion-slides  style="height:40% ; width:100%"autoplay="2000" loop="true" speed="500">
+        <ion-slide style="height:40% ; width:100%" *ngFor="let image of imageArray">
+          <img style="height:40% ; width:100%" [src]="image.image"/>
         </ion-slide>
   </ion-slides>
 
